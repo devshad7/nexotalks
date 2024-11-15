@@ -1,4 +1,5 @@
 import DarkModeToggle from '@/utils/darkModeToogle'
+import { SignedIn, UserButton } from '@clerk/nextjs'
 import { Dock, HomeIcon, Megaphone, MessageCircleMore, MessageSquare, MoonIcon, Scan, UserRound } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
@@ -33,10 +34,13 @@ const Sidebar = () => {
                         <Megaphone className='size-5' />
                     </Link>
                 </div>
-                <div className="px-2 py-4 grid gap-1">
+                <div className="px-2 py-4 flex flex-col gap-2 items-center justify-center">
                     <DarkModeToggle />
+                    <SignedIn>
+                        <UserButton />
+                    </SignedIn>
                 </div>
-                </div>
+            </div>
         </>
     )
 }
