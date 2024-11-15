@@ -8,7 +8,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        layout: {
+          unsafe_disableDevelopmentModeWarnings: true,
+        },
+      }}>
       <html lang="en">
         <body suppressHydrationWarning
           className="dark:bg-muted-dark dark:text-white"
