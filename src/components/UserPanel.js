@@ -37,12 +37,12 @@ const UserPanel = () => {
             viewBox="0 0 24 24"
             width="140"
             height="140"
-            className="fill-current text-gray-400 dark:text-gray-600"
+            className="fill-current text-gray-200 dark:text-gray-500"
           >
             <path d="M21 1H3a2 2 0 0 0-2 2v19.5a.5.5 0 0 0 .85.35L6.71 18H21a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2ZM7 11a1 1 0 1 1 1-1 1 1 0 0 1-1 1Zm5 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1Zm5 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1Z" />
           </svg>
-          <p className="text-xl font-bold text-gray-700 dark:text-gray-100">You have no channels</p>
-          <p className="text-xl font-bold  text-gray-700 dark:text-gray-100">Currently</p>
+          <p className="text-xl font-bold text-gray-500 dark:text-gray-500">You have no channels</p>
+          <p className="text-xl font-bold  text-gray-500 dark:text-gray-500">Currently</p>
         </div>
       </div>
 
